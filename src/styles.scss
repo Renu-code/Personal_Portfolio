@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.flex-spacer {
+    flex: 1 1 auto;
+  }
+
+.background-primary
+{
+  background:  #bb0c46 ;
+}
+.text-floral
+{
+  color: floralwhite;
+}
+.container {
+  margin: 20px;
+  display:flex;
+}

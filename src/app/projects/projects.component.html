@@ -1,0 +1,33 @@
+<mat-card class="project">
+    <div class="container"
+        fxLayout="column"
+        fxLayoutGap="10px">
+
+    <div fxFlex>
+        <div>
+            <h3>Projects</h3>
+            <hr>
+        </div>
+
+    </div>
+
+    <div fxFlex [@expand] >
+        <mat-grid-list cols="2" rowHeight="200px">
+            <mat-grid-tile *ngFor="let project of projects" (click)="onSelect(project)">
+               <img height="200px" src={{project.image}} alt={{project.name}}>
+                <mat-grid-tile-footer>
+                    <h3>{{project.name | uppercase}}</h3>
+                </mat-grid-tile-footer>
+
+            </mat-grid-tile>
+
+        </mat-grid-list>
+    </div>
+
+
+</div>
+
+</mat-card>
+<mat-card class="project">
+    <app-projectdetail [project]="selectedProject"></app-projectdetail>
+</mat-card>

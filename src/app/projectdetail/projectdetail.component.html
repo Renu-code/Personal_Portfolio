@@ -1,0 +1,48 @@
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0"
+    fxLayoutAlign.gt-md="space-around center"
+
+    >
+
+    <div fxFlex="40">
+        
+        <mat-card class="detail" *ngIf="project" [@expand]>
+            <mat-card-header>
+              <mat-card-title>
+                <h3>{{project.name | uppercase}} </h3>
+              </mat-card-title>
+            </mat-card-header>
+          <img mat-card-image src={{project.image}} alt={{project.name}}>
+            <mat-card-content>
+             
+            </mat-card-content>
+            <mat-card-actions>
+              <a class="github" mat-button href={{project.link}}>GitHub Link</a>
+              
+            </mat-card-actions>
+          </mat-card>
+    </div>
+    <div fxFlex="40">
+       <mat-card class="detail" *ngIf="project" [@expand]>
+         <mat-card-header>
+           <mat-card-title>
+             <h2 class="head">Project Description</h2>
+           </mat-card-title>
+         </mat-card-header>
+         <mat-card-content>
+          <p class="des">
+            {{project.description}}
+          </p>
+         </mat-card-content>
+         <mat-card-footer>
+           <h3>{{project.name}}</h3>
+         </mat-card-footer>
+       </mat-card>
+          
+    </div>
+
+</div>

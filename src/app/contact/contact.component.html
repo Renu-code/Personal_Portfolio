@@ -1,0 +1,70 @@
+<mat-toolbar color="primary">
+    Contact me
+    <span class="flex-spacer"></span>
+    <button mat-button mat-dialog-close>&times;</button>
+</mat-toolbar>
+<p>  </p>
+<form novalidate (ngSubmit)="onSubmit()">
+
+    <mat-dialog-content>
+        <p>
+            <mat-form-field>
+                <mat-label>Your Name</mat-label>
+                <input matInput placeholder="Your Name" type="text" required>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <mat-label>Your contact number</mat-label>
+                <input matInput placeholder="Your Name" required>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <mat-label>Any Feedback</mat-label>
+                <textarea rows="5" matInput placeholder="Any comments to leave" required>
+
+                </textarea>
+            </mat-form-field>
+        </p>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <span class="flex-spacer"></span>
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button >Submit</button>
+    </mat-dialog-actions>
+</form>
+<!--
+    <form novalidate (ngSubmit)="onSubmit()">
+    <mat-dialog-content>
+        <p>
+            <mat-form-field>
+                <mat-label>Your Name</mat-label>
+                <input matInput placeholder="Your Name">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <mat-label>Your Name</mat-label>
+                <input matInput placeholder="Your Name">
+            </mat-form-field>
+        </p>
+       <p>
+            <mat-form-field>
+                <mat-label>Your Name</mat-label>
+                <input matInput placeholder="Your Name">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <mat-checkbox name="Remember">Remember me</mat-checkbox>
+            </mat-form-field>
+        </p>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <span class="flex-spacer"></span>
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button >Submit</button>
+    </mat-dialog-actions>
+</form>
+-->
