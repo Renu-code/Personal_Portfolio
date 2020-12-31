@@ -14,6 +14,7 @@ export class ContactComponent implements OnInit {
 
   onSubmit()
   {
+    
     this.dialogRef.close();    
   }
 }

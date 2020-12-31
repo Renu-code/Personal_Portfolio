@@ -38,6 +38,8 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ProjectdetailComponent } from './projectdetail/projectdetail.component';
 
+import 'hammerjs';
+
 @NgModule({
   declarations: [
     AppComponent,

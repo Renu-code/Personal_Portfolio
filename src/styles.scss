@@ -5,7 +5,11 @@
 @import '../node_modules/font-awesome/scss/font-awesome';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0%; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-down $pad-left-right;
+}
 
 .flex-spacer {
     flex: 1 1 auto;

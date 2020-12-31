@@ -9,3 +9,11 @@
     padding: $pad-up-down $pad-left-right;
 }
 
+$background-moredark: #a50066;
+
+.active {
+    background: $background-moredark;
+}
+div {
+    overflow: inherit;
+}

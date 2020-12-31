@@ -1,20 +1,23 @@
-<mat-toolbar color="primary">
-  <span><img class="round" src="/assets/images/logo2.png" height="30" width="41"> Renu G.</span>
-  <span class="flex-spacer"></span>
-  <a mat-button routerLink="/home" >
-    <mat-icon>home</mat-icon> Home
-  </a>
-  <a mat-button routerLink="/projects">
-    <mat-icon>developer_mode</mat-icon> Projects
-  </a>
-  <a mat-button routerLink="/skills">
-    <mat-icon>layers</mat-icon> Skills</a>
-
-  <a mat-button routerLink="/education">
-    <mat-icon>school</mat-icon> Education
-  </a>
-  <a mat-button (click)="openContactForm()">
-    <mat-icon>call</mat-icon> Contact
-  </a>
-</mat-toolbar>
-
+<div>
+  <mat-toolbar color="primary">
+    <span><!--<img class="round" src="/assets/images/logo2.png" height="30" width="41"> -->Renu G.</span>
+    <span class="flex-spacer"></span>
+    <a mat-button routerLink="/home" routerLinkActive="active" >
+      <mat-icon>home</mat-icon> Home
+    </a>
+    <a mat-button routerLink="/projects" routerLinkActive="active">
+      <mat-icon>developer_mode</mat-icon> Projects
+    </a>
+    <a mat-button routerLink="/skills" routerLinkActive="active">
+      <mat-icon>layers</mat-icon> Skills</a>
+  
+    <a mat-button routerLink="/education" routerLinkActive="active">
+      <mat-icon>school</mat-icon> Education
+    </a>
+    <a mat-button (click)="openContactForm()" >
+      <mat-icon>call</mat-icon> Contact
+    </a>
+  </mat-toolbar>
+  
+  
+</div>
