@@ -3,11 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+$background-pale:#292325;
+
+.skill{
+    background-color: $background-pale;
+    color: floralwhite;
+}
+
+.mar
+{
+    margin-top: 10px;
+}
 .skills
 {
     
    font-size: 30px;
-    background: #292325;
+   background-color: $background-pale;
     line-height: 32px;
     
 }
@@ -19,6 +30,7 @@
 {
     font-size: 20px;
     color: rgb(207, 59, 49);
+    margin-left: 10px;
 }
 .heading
 {

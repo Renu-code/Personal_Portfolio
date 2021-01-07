@@ -21,6 +21,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 import { HeaderComponent } from './header/header.component';
@@ -72,6 +74,8 @@ import 'hammerjs';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    MatMenuModule,
+    MatDividerModule,
 
     MatRippleModule,
     MatStepperModule,
